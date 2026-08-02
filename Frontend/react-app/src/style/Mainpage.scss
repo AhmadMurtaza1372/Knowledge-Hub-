@@ -1,0 +1,62 @@
+.pagemp{
+    background-color: white;
+    background-size: cover;
+    height: 90vh;
+
+
+.main-secmp{
+    display: flex;
+    img{
+        background-size:cover ;
+        height: 40vh;
+        padding-left: 500px;
+        display: flex;
+        gap: 16px;
+      
+  
+    
+}
+}
+a{
+    padding: 5px 15px;
+    background-color: black;
+    color: beige;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-flex;
+    margin-left: 650px;
+    &:hover {
+      opacity: 0.7;
+    }
+    }
+p{
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,196 @@
+$primary-color: black;
+$secondary-color: beige;
+$background-color: white;
+$hover-color: blue;
+$font-family: 'Arial, sans-serif';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-color;
+  padding: 1rem;
+  font-family: $font-family;
+
+  .left-nav {
+      display: flex;
+      align-items: center;
+      a {
+          color: $primary-color;
+          text-decoration: none;
+          font-size: 24px;
+          font-weight: 700;
+          margin-left: 10px;
+          &:hover,
+          &:focus {
+              color: $hover-color;
+              outline: none;
+          }
+      }
+      img {
+          height: 50px;
+          margin-right: 10px;
+      }
+  }
+
+  .centre-nav {
+      display: flex;
+      align-items: center;
+      .connect-with-us {
+          display: flex;
+          align-items: center;
+          a {
+              color: $primary-color;
+              text-decoration: none;
+              font-size: 20px;
+              margin: 0 5px;
+              &:hover,
+              &:focus {
+                  color: $hover-color;
+                  outline: none;
+              }
+          }
+      }
+  }
+
+  .right-nav {
+      display: flex;
+      align-items: center;
+      p {
+          font-size: 14px;
+          margin-right: 5px;
+      }
+      .button {
+          padding: 8px 15px;
+          background-color: $primary-color;
+          color: $secondary-color;
+          border: 1px solid $primary-color;
+          border-radius: 5px;
+          text-decoration: none;
+          font-size: 16px;
+          margin-right: 10px;
+          &:hover,
+          &:focus {
+              opacity: 0.7;
+              outline: none;
+          }
+      }
+      .profile-pic {
+          display: flex;
+          align-items: center;
+          position: relative;
+          span {
+              font-size: 16px;
+              margin-left: 5px;
+              color: $primary-color;
+          }
+          img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              border: 2px solid $primary-color;
+              margin-right: 5px;
+          }
+          button {
+              background-color: transparent;
+              border: none;
+              margin-top: 7px;
+              margin-left: 5px;
+              color: $primary-color;
+              &:focus {
+                  outline: 2px solid $hover-color;
+                  outline-offset: 2px;
+              }
+          }
+          .dropdown-content {
+              position: absolute;
+              top: 110%;
+              right: 0;
+              background-color: $background-color;
+              box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+              border-radius: 5px;
+              padding: 10px;
+              li {
+                  list-style-type: none;
+                  a {
+                      text-decoration: none;
+                      color: $primary-color;
+                      font-size: 16px;
+                      display: block;
+                      margin-bottom: 5px;
+                      &:hover,
+                      &:focus {
+                          color: $hover-color;
+                          outline: none;
+                      }
+                  }
+                  button {
+                      background-color: $primary-color;
+                      color: $secondary-color;
+                      border: 1px solid $primary-color;
+                      border-radius: 5px;
+                      padding: 5px 10px;
+                      font-size: 16px;
+                      cursor: pointer;
+                      &:hover,
+                      &:focus {
+                          opacity: 0.7;
+                          outline: none;
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      padding: 0.5rem;
+      .left-nav {
+          margin-bottom: 10px;
+          a {
+              font-size: 20px;
+          }
+          img {
+              height: 40px;
+          }
+      }
+      .centre-nav {
+          margin-bottom: 10px;
+          .connect-with-us {
+              a {
+                  font-size: 16px;
+              }
+          }
+      }
+      .right-nav {
+          .profile-pic {
+              span {
+                  font-size: 14px;
+              }
+              img {
+                  width: 30px;
+                  height: 30px;
+              }
+              button {
+                  margin-top: 5px;
+                  font-size: 14px;
+              }
+              .dropdown-content {
+                  top: 100%;
+                  right: -10px;
+                  padding: 5px;
+                  li {
+                      a {
+                          font-size: 14px;
+                      }
+                      button {
+                          font-size: 14px;
+                      }
+                  }
+              }
+          }
+      }
+  }
+}

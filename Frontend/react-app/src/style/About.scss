@@ -1,0 +1,26 @@
+$primary-color: #000;
+$secondary-color: #555;
+$background-color: #f9f9f9;
+$font-family: 'Arial, sans-serif';
+
+.about-container {
+  background-color: $background-color;
+  padding: 2rem;
+  border-radius: 8px;
+  font-family: $font-family;
+  color: $primary-color;
+  max-width: 800px;
+  margin: 2rem auto;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: $secondary-color;
+    margin-bottom: 1rem;
+  }
+}
