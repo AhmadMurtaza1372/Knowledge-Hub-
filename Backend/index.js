@@ -16,15 +16,14 @@ const url = process.env.MONGO_URL_DEV;
 
 app.use(cors());
 app.use(bodyParser.json());
-
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(url)
   .then(() => {
-    console.log(`Database Connected on ${url}`)
+    console.log('Database Connected Successfully!');
     app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
     });
   })
-  .catch(error => console.error(error));
+  .catch(error => console.error('Connection Error:', error.message));
 
 app.post('/api/signup', Register);
 app.post('/api/login', handleLogin);
